@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "390087522948",
+    "firebase_url": "https://rotary-hospital-app.firebaseio.com",
+    "project_id": "rotary-hospital-app",
+    "storage_bucket": "rotary-hospital-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390087522948:android:7df586692df0e28c",
+        "android_client_info": {
+          "package_name": "com.example.jain.rotaryhospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390087522948-tpijr632gp3il9p9sigakosmnntbbsif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jain.rotaryhospital",
+            "certificate_hash": "11cca8f3cd541d9400c30bce0de7ba052787faaf"
+          }
+        },
+        {
+          "client_id": "390087522948-sggk4a1qp12fb4q6o6tekjscpid93bv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_K743bzsJpYqaNhM4a4_23M0VnYFGQ34"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390087522948-sggk4a1qp12fb4q6o6tekjscpid93bv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

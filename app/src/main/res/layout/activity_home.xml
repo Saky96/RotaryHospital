@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="com.example.jain.rotaryhospital.views.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHomeTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imageViewHomeLogo"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textViewHomeROR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Rotary Online registration"
+            android:textColor="#1b1b68"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHomeMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#667780"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/textViewHomeWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Welcome to Rotary Online Registration."
+            android:textColor="#ffdd00"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonHomeBookAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:onClick="BookAppointment"
+            android:layout_weight="3"
+            android:background="@drawable/home_button_background"
+            android:padding="5dp"
+            android:text="Book Appointment"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonHomeDoctorsAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:background="@drawable/home_button_background"
+            android:onClick="DoctorsAvailable"
+            android:padding="5dp"
+            android:text=" Doctors Available "
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHomeBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="#667780">
+
+        <ImageView
+            android:id="@+id/buttonHomeInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+
+</LinearLayout>
