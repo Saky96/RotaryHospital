@@ -68,5 +68,4 @@ public class RegistrationDetails {
         this.phoneNo = phoneNo;
     }
 
-
 }
