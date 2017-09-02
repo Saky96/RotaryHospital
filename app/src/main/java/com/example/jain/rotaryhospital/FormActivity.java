@@ -1,5 +1,6 @@
 package com.example.jain.rotaryhospital;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import static java.lang.Integer.parseInt;
 
 public class FormActivity extends AppCompatActivity {
+
+
 
     RadioGroup radioGroup;
     RadioButton radioButtonMale;
@@ -109,8 +112,25 @@ public class FormActivity extends AppCompatActivity {
                     callSignup(getEmail, getPassword);
                 }
 
+
+                int id=radioGroup.getCheckedRadioButtonId();
+                RadioButton radioButton=(RadioButton)findViewById(id);
+
+                String selectedValueGender=radioButton.getText().toString();
+                Toast.makeText(FormActivity.this,selectedValueGender,Toast.LENGTH_SHORT).show();
+
+
+                ProgressDialog progress;
+
+                progress = new ProgressDialog(FormActivity.this);
+                progress.setTitle("Registration Process Running!!");
+                progress.setMessage("Please Wait !!");
+                progress.setCancelable(true);
+                progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progress.show();
                 /*Intent registerIntent = new Intent(FormActivity.this,LoginActivity.class);
                 startActivity(registerIntent);*/
+
             }
         });
     }

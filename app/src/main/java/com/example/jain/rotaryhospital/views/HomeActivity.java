@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
-
 import com.example.jain.rotaryhospital.DoctorsActivity;
 import com.example.jain.rotaryhospital.FormActivity;
 import com.example.jain.rotaryhospital.LoginActivity;
@@ -29,9 +27,6 @@ public class HomeActivity extends AppCompatActivity {
     public void BookAppointment(View view) {
         Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
         startActivity(intent);
-    }
 
-    public void BookAppointment1(View v){
-        Toast.makeText(this, "Home Activity", Toast.LENGTH_SHORT).show();
     }
 }
