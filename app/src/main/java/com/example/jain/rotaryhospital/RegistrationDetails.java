@@ -68,7 +68,7 @@ public class RegistrationDetails {
         this.phoneNo = phoneNo;
     }
 
-    public void test(){
-        //this is to test git
+    public void testing(){
+        //this is to test github
     }
 }
