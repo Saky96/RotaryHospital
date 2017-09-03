@@ -200,6 +200,8 @@ public class LoginActivity extends AppCompatActivity {
     //Now start signin process
     public void callSignIn(String email, String password) {
 
+        // progress bar
+
         ProgressDialog progress;
 
         progress = new ProgressDialog(LoginActivity.this);
