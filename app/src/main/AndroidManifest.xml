@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jain.rotaryhospital">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -24,9 +25,8 @@
         <activity android:name=".views.HomeActivity" />
         <activity android:name=".DoctorsActivity" />
         <activity android:name=".FormActivity" />
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+        <activity android:name=".LoginActivity" android:label="@string/title_activity_login" />
+        <activity android:name=".AppoinmentBookingProfile" android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

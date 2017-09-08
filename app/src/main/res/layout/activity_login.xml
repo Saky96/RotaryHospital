@@ -71,7 +71,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="do not have an Account? Register"/>
+                android:text="Do not have an Account? Register"/>
 
         </LinearLayout>
     </ScrollView>

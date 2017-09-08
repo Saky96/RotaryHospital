@@ -3,6 +3,7 @@ package com.example.jain.rotaryhospital;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -198,6 +199,18 @@ public class LoginActivity extends AppCompatActivity {
     }
     //Now start signin process
     public void callSignIn(String email, String password) {
+
+        // progress bar
+
+        ProgressDialog progress;
+
+        progress = new ProgressDialog(LoginActivity.this);
+        progress.setTitle("Sign In !!");
+        progress.setMessage("Please Wait !!");
+        progress.setCancelable(true);
+        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progress.show();
+
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -207,12 +220,16 @@ public class LoginActivity extends AppCompatActivity {
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
+
+
+
                         if (!task.isSuccessful()) {
                             Log.w("TESTING", "signInWithEmail:failed", task.getException());
                             Toast.makeText(LoginActivity.this, "Signin Failed",
                                     Toast.LENGTH_SHORT).show();
                         } else {
-                            Intent signInIntent = new Intent(LoginActivity.this,HomeActivity.class);
+
+                            Intent signInIntent = new Intent(LoginActivity.this,AppoinmentBookingProfile.class);
                             startActivity(signInIntent);
                             finish();
                         }

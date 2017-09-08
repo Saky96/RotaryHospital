@@ -27,5 +27,6 @@ public class HomeActivity extends AppCompatActivity {
     public void BookAppointment(View view) {
         Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
         startActivity(intent);
+
     }
 }
