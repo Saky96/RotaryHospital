@@ -16,7 +16,7 @@
         android:weightSum="11">
 
         <TextView
-            android:id="@+id/textViewFormRegistrationForm"
+            android:id="@+id/textViewMyProfileFragmentUserProfile"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="3dp"
@@ -36,7 +36,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewId"
+            android:id="@+id/textViewMyProfileFragmentId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -46,7 +46,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewGeneratedId"
+            android:id="@+id/textViewMyProfileFragmentGeneratedId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -64,7 +64,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewUserName"
+            android:id="@+id/textViewMyProfileFragmentUserName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -74,7 +74,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredUserName"
+            android:id="@+id/textViewMyProfileFragmentEnteredUserName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -93,7 +93,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewFatherName"
+            android:id="@+id/textViewMyProfileFragmentFatherName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -103,7 +103,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredFatherName"
+            android:id="@+id/textViewMyProfileFragmentEnteredFatherName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -121,7 +121,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewAge"
+            android:id="@+id/textViewMyProfileFragmentAge"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -131,7 +131,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredAge"
+            android:id="@+id/textViewMyProfileFragmentEnteredAge"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -149,7 +149,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewEmail"
+            android:id="@+id/textViewMyProfileFragmentEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -159,7 +159,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredEmail"
+            android:id="@+id/textViewMyProfileFragmentEnteredEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -177,7 +177,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewPassword"
+            android:id="@+id/textViewMyProfileFragmentPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -187,7 +187,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredPassword"
+            android:id="@+id/textViewMyProfileFragmentEnteredPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -205,7 +205,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewGender"
+            android:id="@+id/textViewMyProfileFragmentGender"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -215,7 +215,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredGender"
+            android:id="@+id/textViewMyProfileFragmentEnteredGender"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -233,7 +233,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewAddress"
+            android:id="@+id/textViewMyProfileFragmentAddress"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -243,7 +243,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredAddress"
+            android:id="@+id/textViewMyProfileFragmentEnteredAddress"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -261,7 +261,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/textViewPhoneNumber"
+            android:id="@+id/textViewMyProfileFragmentPhoneNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -271,7 +271,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewEnteredPhoneNumber"
+            android:id="@+id/textViewMyProfileFragmentEnteredPhoneNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

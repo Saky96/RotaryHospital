@@ -1,4 +1,4 @@
-package com.example.jain.rotaryhospital.views;
+package com.example.jain.rotaryhospital;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import com.example.jain.rotaryhospital.R;
 
 public class SplashActivity extends AppCompatActivity {
 

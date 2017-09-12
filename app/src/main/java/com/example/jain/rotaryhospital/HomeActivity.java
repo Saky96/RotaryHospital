@@ -1,13 +1,9 @@
-package com.example.jain.rotaryhospital.views;
+package com.example.jain.rotaryhospital;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import com.example.jain.rotaryhospital.DoctorsActivity;
-import com.example.jain.rotaryhospital.FormActivity;
-import com.example.jain.rotaryhospital.LoginActivity;
-import com.example.jain.rotaryhospital.R;
 
 public class HomeActivity extends AppCompatActivity {
 

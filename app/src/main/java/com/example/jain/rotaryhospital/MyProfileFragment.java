@@ -40,13 +40,13 @@ public class MyProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.my_profile_fragment, container, false);
 
-        textViewUserName=(TextView)view.findViewById(R.id.textViewEnteredUserName);
-        textViewFatherName=(TextView)view.findViewById(R.id.textViewEnteredFatherName);
-        textViewAge=(TextView)view.findViewById(R.id.textViewEnteredAge);
-        textViewEmail=(TextView)view.findViewById(R.id.textViewEnteredEmail);
-        textViewPassword=(TextView)view.findViewById(R.id.textViewEnteredPassword);
-        textViewAddress=(TextView)view.findViewById(R.id.textViewEnteredAddress);
-        textViewPhoneNumber=(TextView)view.findViewById(R.id.textViewEnteredPhoneNumber);
+        textViewUserName=(TextView)view.findViewById(R.id.textViewMyProfileFragmentEnteredUserName);
+        textViewFatherName=(TextView)view.findViewById(R.id.textViewMyProfileFragmentEnteredFatherName);
+        textViewAge=(TextView)view.findViewById(R.id.textViewMyProfileFragmentEnteredAge);
+        textViewEmail=(TextView)view.findViewById(R.id.textViewMyProfileFragmentEnteredEmail);
+        textViewPassword=(TextView)view.findViewById(R.id.textViewMyProfileFragmentEnteredPassword);
+        textViewAddress=(TextView)view.findViewById(R.id.textViewMyProfileFragmentEnteredAddress);
+        textViewPhoneNumber=(TextView)view.findViewById(R.id.textViewMyProfileFragmentEnteredPhoneNumber);
 
 
 

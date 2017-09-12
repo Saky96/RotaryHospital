@@ -7,7 +7,7 @@
     android:background="#ffffff"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.jain.rotaryhospital.views.SplashActivity">
+    tools:context="com.example.jain.rotaryhospital.SplashActivity">
 
     <TextView
         android:id="@+id/textViewSplashROR"

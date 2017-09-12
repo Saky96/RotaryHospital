@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context="com.example.jain.rotaryhospital.views.HomeActivity">
+    tools:context="com.example.jain.rotaryhospital.HomeActivity">
 
     <LinearLayout
         android:id="@+id/linearLayoutHomeTop"
