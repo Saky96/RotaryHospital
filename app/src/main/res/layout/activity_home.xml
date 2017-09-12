@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="8"
+    android:weightSum="10"
     tools:context="com.example.jain.rotaryhospital.views.HomeActivity">
 
     <LinearLayout
@@ -19,6 +19,7 @@
 
         <ImageView
             android:id="@+id/imageViewHomeLogo"
+            android:layout_margin="5dp"
             android:layout_width="120dp"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -41,7 +42,7 @@
         android:id="@+id/linearLayoutHomeMiddle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
+        android:layout_weight="6"
         android:background="#667780"
         android:gravity="center"
         android:orientation="vertical"
@@ -65,6 +66,7 @@
             android:layout_height="0dp"
             android:layout_margin="10dp"
             android:onClick="BookAppointment"
+            android:drawableTop="@drawable/ic_content_paste_black_24dp"
             android:layout_weight="3"
             android:background="@drawable/home_button_background"
             android:padding="5dp"
@@ -77,6 +79,8 @@
         <Button
             android:id="@+id/buttonHomeDoctorsAvailable"
             android:layout_width="match_parent"
+            android:drawableTop="@drawable/ic_local_hospital_black_24dp"
+
             android:layout_height="0dp"
             android:layout_margin="10dp"
             android:layout_weight="3"
@@ -100,11 +104,11 @@
 
         <ImageView
             android:id="@+id/buttonHomeInfo"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/ic_info_outline_black_24dp" />
     </RelativeLayout>
 
 
