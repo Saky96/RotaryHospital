@@ -101,7 +101,6 @@
 
         <RadioButton
             android:id="@+id/radioButtonFormMale"
-
             android:padding="1dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -115,7 +114,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
             android:padding="1dp"
             android:text="Female"
             android:textColor="#646665"
@@ -127,7 +125,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Other"
-
             android:padding="1dp"
             android:textColor="#646665"
             android:textSize="20dp" />
