@@ -103,12 +103,14 @@
         android:background="#667780">
 
         <ImageView
+            android:onClick="InfoAlert"
             android:id="@+id/buttonHomeInfo"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
             android:src="@drawable/ic_info_outline_black_24dp" />
+
     </RelativeLayout>
 
 
