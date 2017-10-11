@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     android:layout_margin="7dp"
     android:orientation="vertical"
-    android:weightSum="11"
+    android:weightSum="12"
     tools:context="com.example.jain.rotaryhospital.FormActivity">
+
 
     <TextView
         android:id="@+id/textViewFormRegistrationForm"
@@ -38,6 +39,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:hint="Name"
+        android:padding="1dp"
         android:singleLine="true"
         android:textColor="#000000"
         android:textSize="20sp" />
@@ -48,6 +50,18 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:hint="Father's Name"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextFormAge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Age"
+        android:padding="1dp"
         android:singleLine="true"
         android:textColor="#000000"
         android:textSize="20sp" />
@@ -59,6 +73,7 @@
         android:layout_weight="1"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:padding="1dp"
         android:singleLine="true"
         android:textColor="#000000"
         android:textSize="20sp" />
@@ -69,18 +84,21 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="1dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
+        android:padding="1dp"
         android:text="Gender:"
         android:textColor="#646665"
         android:textSize="20sp" />
 
     <RadioGroup
+
         android:id="@+id/radioButtonGroupForm"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -88,6 +106,7 @@
         android:checkedButton="@+id/radioButtonFormMale"
         android:gravity="center_vertical"
         android:orientation="horizontal"
+        android:padding="1dp"
         android:weightSum="3">
 
         <RadioButton
@@ -95,6 +114,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="1dp"
             android:text="Male"
             android:textColor="#646665"
             android:textSize="20dp" />
@@ -104,6 +124,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="1dp"
             android:text="Female"
             android:textColor="#646665"
             android:textSize="20dp" />
@@ -113,6 +134,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="1dp"
             android:text="Other"
             android:textColor="#646665"
             android:textSize="20dp" />
@@ -127,6 +149,7 @@
         android:layout_weight="1"
         android:hint="Address"
         android:inputType="textPostalAddress"
+        android:padding="1dp"
         android:textColor="#000000"
         android:textSize="20sp" />
 
@@ -143,6 +166,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="1dp"
             android:text="+91"
             android:textColor="#646665"
             android:textSize="20sp" />
@@ -159,8 +183,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:hint="Phone Number"
+            android:hint="Contact Number"
             android:inputType="number"
+            android:padding="0.5dp"
             android:singleLine="true"
             android:textSize="20sp" />
     </LinearLayout>

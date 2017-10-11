@@ -21,7 +21,7 @@ public class DoctorsActivity extends AppCompatActivity {
 
         ArrayList<String> names= new ArrayList<>();
         names.add("Dr. Kailash Gupta");
-        names.add("Dr. Sharan Sharma");
+        names.add("Dr. Satinder Pal");
         names.add("Dr. Kanak Anand");
         names.add("Dr. Manika Singh");
         names.add("Dr. Kalindi Khera");

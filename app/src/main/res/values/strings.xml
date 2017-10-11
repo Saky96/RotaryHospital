@@ -2,6 +2,22 @@
     <string name="app_name">Rotary Hospital</string>
     <string name="title_activity_login">Sign in</string>
 
+    <!-- Strings related to info button -->
+    <string name="info_alert_title" >About Us</string>
+    <string name="info_alert_msg">\nWe are Tyro Engineers</string>
+    <string name="ok">Ok</string>
+
+    <!-- Strings related to Book Apppointment Fragment spinner -->
+    <string-array name="Doctor_list">
+        <item>Dr. Kailash Gupta (Skin specialist)</item>
+        <item>Dr. Satinder Pal (heart specialist)</item>
+        <item>Dr. Kanak Anand (ENT specialist)</item>
+        <item>Dr. Manika Singh (gynecologist)</item>
+        <item>Dr. Kalindi Khera (pediatrician)</item>
+    </string-array>
+
+
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -14,4 +30,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="pick_time" />
+    <string name="dateformate">dd/MM/yyyy</string>
+    <string name="hour_minutes">HH:mm</string>
+
+
 </resources>
