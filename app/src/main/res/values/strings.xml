@@ -9,11 +9,44 @@
 
     <!-- Strings related to Book Apppointment Fragment spinner -->
     <string-array name="Doctor_list">
-        <item>Dr. Kailash Gupta (Skin specialist)</item>
-        <item>Dr. Satinder Pal (heart specialist)</item>
-        <item>Dr. Kanak Anand (ENT specialist)</item>
-        <item>Dr. Manika Singh (gynecologist)</item>
-        <item>Dr. Kalindi Khera (pediatrician)</item>
+        <item>Dr. Vijay Bansal (ENT specialist)</item>
+        <item>Dr. Varun Goel (Medicine specialist)</item>
+        <item>Dr. S K Mathur (Endocrinologist)</item>
+        <item>Dr. S Gupta (Dermatologist)</item>
+        <item>Dr. Rahul Trehan (Cardiologist)</item>
+        <item>Dr. Ajay Goel (Nephrologist)</item>
+        <item>Dr. Tushar Gupta (Orthopaedic Surgeon)</item>
+        <item>Dr. Ravinder Goyal (Gastroenterologist)</item>
+        <item>Dr. R K Tiwari (Nuerosurgeon)</item>
+        <item>Dr. D Chaudhary (Urologist)</item>
+        <item>Dr. Sumit Gupta (Radiologist)</item>
+        <item>Dr. Surinder Makkar (Cosmetic and plastic Surgeon)</item>
+        <item>Dr. Samriti gupta (MBBS)</item>
+        <item>Dr. Tushar Gupta (A) (Orthopaedic)</item>
+        <item>Dr. M K Gupta (Surgeon)</item>
+        <item>Dr. Veni Mittal (Gynaecologist)</item>
+        <item>Dr. Neha Pathania (Dietician)</item>
+        <item>Dr. Arjun (MBBS)</item>
+        <item>Dr. Krishan khudawla (ENT Surgeon)</item>
+        <item>Dr. Rahul Suri (MBBS)</item>
+        <item>Dr. Rajesh Gupta (Psychiatrist)</item>
+        <item>Dr. Vandana Goyal (Pathologist)</item>
+        <item>Dr. Abhishek Bhushan (A) (General Surgeon)</item>
+        <item>Dr. Hambir Majumdar (Medicine Specialist)</item>
+        <item>Dr. Mayank (MBBS)</item>
+        <item>Dr. Bhim Sen Kapoor (MBBS)</item>
+        <item>Dr. Taranjot Singh (MBBS)</item>
+        <item>Dr. Avtaar Singh Matharoo (Pain Management Specialist)</item>
+        <item>Dr. Varun singla (Plastic Surgeon)</item>
+        <item>Dr. Mudita Dhingra (Pediatrician)</item>
+        <item>Dr. Manish Singla (Urologist)</item>
+        <item>Dr. Shashi Joshi (MD, OBS and Gyane)</item>
+        <item>Dr. Parvinder Singh (Gastroenterologist)</item>
+        <item>Dr. Sunita Sharma (Dietician)</item>
+        <item>Dr. Arjun Shankar (Physiotherapist)</item>
+        <item>Dr. Kuljinder Sodhi (Cancer specialist)</item>
+        <item>Dr. Rachna Sharma (MBBS)</item>
+
     </string-array>
 
 

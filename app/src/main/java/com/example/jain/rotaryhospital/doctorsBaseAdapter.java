@@ -18,13 +18,13 @@ public class doctorsBaseAdapter extends BaseAdapter {
     Context context;
     ArrayList<String> doctorNameList;
     ArrayList<String> doctorQualificationList;
-    ArrayList<String> doctorAvailabilityList;
+    //ArrayList<String> doctorAvailabilityList;
 
-    doctorsBaseAdapter(Context ctx, ArrayList<String> NamesList, ArrayList<String> QualificationList,ArrayList<String> AvailablilityList) {
+    doctorsBaseAdapter(Context ctx, ArrayList<String> NamesList, ArrayList<String> QualificationList/*,ArrayList<String> AvailablilityList*/) {
         context = ctx;
         doctorNameList = NamesList;
         doctorQualificationList = QualificationList;
-        doctorAvailabilityList=AvailablilityList;
+       // doctorAvailabilityList=AvailablilityList;
     }
 
     @Override
@@ -56,9 +56,9 @@ public class doctorsBaseAdapter extends BaseAdapter {
         String sampleQuali = doctorQualificationList.get(position);
         tvQuali.setText(sampleQuali);
 
-        TextView tvAvailability = (TextView) view.findViewById(R.id.textViewDoctorsAvailability);
+      /*  TextView tvAvailability = (TextView) view.findViewById(R.id.textViewDoctorsAvailability);
         String sampleAvailibility = doctorAvailabilityList.get(position);
-        tvAvailability.setText(sampleAvailibility);
+        tvAvailability.setText(sampleAvailibility);*/
 
         return view;
     }
