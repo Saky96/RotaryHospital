@@ -11,6 +11,17 @@ public class RegistrationDetails {
     String password;
     String address;
     double phoneNo;
+    String gender;
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+
 
     public String getPassword() {
         return password;
@@ -36,7 +47,7 @@ public class RegistrationDetails {
         this.fatherName = fatherName;
     }
 
-   /* public int getAge() {
+   /*public int getAge() {
         return age;
     }
 
