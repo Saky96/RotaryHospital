@@ -3,8 +3,9 @@
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to info button -->
-    <string name="info_alert_title" >About Us</string>
-    <string name="info_alert_msg">\nWe are Tyro Engineers</string>
+    <!--<string name="info_alert_title">ROTARY ONLINE REGISTRATION</string>
+    <string name="info_alert_msg">\n\t\t\t\t\tVersion 1.0\n\nDeveloped By:\nTyro Engineers\n\nTeam:\nSaksham Saigal\nMegha Jain\nRitika</string>
+    -->
     <string name="ok">Ok</string>
 
     <!-- Strings related to Book Apppointment Fragment spinner -->
@@ -48,7 +49,6 @@
         <item>Dr. Rachna Sharma (MBBS)</item>
 
     </string-array>
-
 
 
     <!-- Strings related to login -->
