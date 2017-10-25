@@ -25,8 +25,9 @@ import java.util.Date;
 public class BookAppointmentFragment extends Fragment {
 
     Spinner doclist;
+    Spinner timelist;
     DatePicker pickerDate;
-    TimePicker pickerTime;
+    //TimePicker pickerTime;
 
     public BookAppointmentFragment() {
         // Required empty public constructor
@@ -47,24 +48,29 @@ public class BookAppointmentFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         doclist = (Spinner) getActivity().findViewById(R.id.SpinnerBookAppointmentFragmentDoctorList);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(), R.array.Doctor_list, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        doclist.setAdapter(adapter);
+        ArrayAdapter adapterDoctor = ArrayAdapter.createFromResource(getActivity(), R.array.Doctor_list, android.R.layout.simple_spinner_item);
+        adapterDoctor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        doclist.setAdapter(adapterDoctor);
+
+        timelist = (Spinner) getActivity().findViewById(R.id.SpinnerBookAppointmentFragmentTime);
+        ArrayAdapter adapterTime = ArrayAdapter.createFromResource(getActivity(), R.array.Time_list, android.R.layout.simple_spinner_item);
+        adapterTime.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        timelist.setAdapter(adapterTime);
 
 
         pickerDate = (DatePicker) getActivity().findViewById(R.id.datePickerBookAppointmentFragmentDate);
-        pickerTime = (TimePicker) getActivity().findViewById(R.id.timePickerBookAppointmentFragmentTime);
+        //pickerTime = (TimePicker) getActivity().findViewById(R.id.timePickerBookAppointmentFragmentTime);
         java.util.Calendar calender = java.util.Calendar.getInstance();
         calender.clear();
         calender.set(java.util.Calendar.MONTH, pickerDate.getMonth());
         calender.set(java.util.Calendar.DAY_OF_MONTH, pickerDate.getDayOfMonth());
         calender.set(java.util.Calendar.YEAR, pickerDate.getYear());
-        calender.set(java.util.Calendar.HOUR, pickerTime.getCurrentHour());
+        /*calender.set(java.util.Calendar.HOUR, pickerTime.getCurrentHour());
         calender.set(java.util.Calendar.MINUTE, pickerTime.getCurrentMinute());
-        calender.set(java.util.Calendar.SECOND, 00);
+        calender.set(java.util.Calendar.SECOND, 00);*/
 
-        SimpleDateFormat formatter = new SimpleDateFormat(getString(R.string.hour_minutes));
-        String timeString = formatter.format(new Date(calender.getTimeInMillis()));
+        /*SimpleDateFormat formatter = new SimpleDateFormat(getString(R.string.hour_minutes));
+        String timeString = formatter.format(new Date(calender.getTimeInMillis()));*/
         SimpleDateFormat dateformatter = new SimpleDateFormat(getString(R.string.dateformate));
         String dateString = dateformatter.format(new Date(calender.getTimeInMillis()));
 
