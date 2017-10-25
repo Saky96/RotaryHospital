@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.jain.rotaryhospital.InfoActivity">
+
+    <TextView
+        android:id="@+id/textViewInfoROR"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Rotary Online Registration"
+        android:textColor="#1b1b68"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewInfoVersion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Version 1.0"
+        android:textColor="#1b1b68"
+        android:textSize="17sp" />
+
+
+    <ImageView
+        android:id="@+id/imageViewInfoLogo"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewInfoDevelopedBy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Developed By:"
+        android:textColor="#1b1b68"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewInfoTyro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TYRO ENGINEERS"
+        android:textColor="#1b1b68"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textViewInfoTeam"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Team:"
+        android:textColor="#1b1b68"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewInfoTeamMembers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Saksham Saigal\nMegha Jain\nRitika"
+        android:textColor="#1b1b68"
+        android:textSize="23sp" />
+
+    <Button
+        android:onClick="OnOkClick"
+        android:id="@+id/buttonInfoOK"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/form_button_background"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="OK"
+        android:textSize="20sp" />
+
+</LinearLayout>

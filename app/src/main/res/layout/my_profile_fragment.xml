@@ -7,278 +7,292 @@
     android:layout_margin="10dp"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/scrollViewMyProfileFragmentScrollView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="7dp"
-        android:orientation="vertical"
-        android:weightSum="11">
+        android:scrollbars="vertical">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentUserProfile"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="3dp"
-            android:layout_weight="11"
-            android:gravity="center"
-            android:text="User Profile"
-            android:textAllCaps="true"
-            android:textColor="#000000"
-            android:textSize="25sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentId"
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ID:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentGeneratedId"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ID"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="7dp"
+                android:orientation="vertical"
+                android:weightSum="11">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentUserProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="11"
+                    android:gravity="center"
+                    android:text="User Profile"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentUserName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="User Name:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ID:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredUserName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="User Name"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentGeneratedId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="ID"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Username:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:text="User Name"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentFatherName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Father Name:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentFatherName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Father:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredFatherName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Father Name"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredFatherName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="Father Name"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentAge"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Age:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Age:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredAge"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Age"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Age"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEmail"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Email:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Email:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredEmail"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Email"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="Email"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentPassword"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Password:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Password:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredPassword"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Password"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:text="Password"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentGender"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Gender:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gender:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredGender"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Gender"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Gender"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentAddress"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Address:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Address:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredAddress"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Address"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Address"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentPhoneNumber"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Contact No:"
-            android:textColor="#646665"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="Contact No:"
+                    android:textColor="#646665"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewMyProfileFragmentEnteredPhoneNumber"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Contact no"
-            android:textColor="#646665"
-            android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textViewMyProfileFragmentEnteredPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:text="Contact no"
+                    android:textColor="#646665"
+                    android:textSize="22sp" />
 
-    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

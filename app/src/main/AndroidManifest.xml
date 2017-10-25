@@ -25,8 +25,13 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".DoctorsActivity" />
         <activity android:name=".FormActivity" />
-        <activity android:name=".LoginActivity" android:label="@string/title_activity_login" />
-        <activity android:name=".AppoinmentBookingProfile" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".AppoinmentBookingProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InfoActivity"></activity>
     </application>
 
 </manifest>

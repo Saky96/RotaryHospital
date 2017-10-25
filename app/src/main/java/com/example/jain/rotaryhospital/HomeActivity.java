@@ -41,20 +41,11 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    public void InfoAlert(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        String msg = getString(R.string.info_alert_title)+ getString(R.string.info_alert_msg);
-        builder.setMessage(msg).setCancelable(
-                false).setPositiveButton(getString(R.string.ok),
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        Intent intent= new Intent(HomeActivity.this, HomeActivity.class);
-                        finish();
-                        startActivity(intent);
-                    }
-                });
-        AlertDialog alert = builder.create();
-        alert.show();
+    public void InfoAlert(View view) {
+
+        Intent intent = new Intent(HomeActivity.this, InfoActivity.class);
+        finish();
+        startActivity(intent);
     }
 
 

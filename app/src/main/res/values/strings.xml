@@ -1,13 +1,9 @@
 <resources>
     <string name="app_name">Rotary Hospital</string>
     <string name="title_activity_login">Sign in</string>
-
-    <!-- Strings related to info button -->
-    <string name="info_alert_title" >About Us</string>
-    <string name="info_alert_msg">\nWe are Tyro Engineers</string>
     <string name="ok">Ok</string>
 
-    <!-- Strings related to Book Apppointment Fragment spinner -->
+    <!-- Strings related to Book Apppointment Fragment doctor spinner -->
     <string-array name="Doctor_list">
         <item>Dr. Vijay Bansal (ENT specialist)</item>
         <item>Dr. Varun Goel (Medicine specialist)</item>
@@ -46,9 +42,19 @@
         <item>Dr. Arjun Shankar (Physiotherapist)</item>
         <item>Dr. Kuljinder Sodhi (Cancer specialist)</item>
         <item>Dr. Rachna Sharma (MBBS)</item>
-
     </string-array>
 
+    <!-- Strings related to Book Apppointment Fragment time spinner -->
+    <string-array name="Time_list">
+        <item>9am to 10am</item>
+        <item>10am to 11am</item>
+        <item>11am to 12noon</item>
+        <item>12noon to 1pm</item>
+        <item>1pm to 2pm</item>
+        <item>3pm to 4pm</item>
+        <item>4pm to 5pm</item>
+        <item>5pm to 6pm</item>
+    </string-array>
 
 
     <!-- Strings related to login -->
