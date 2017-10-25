@@ -26,6 +26,7 @@ import static java.lang.Integer.parseInt;
 public class FormActivity extends AppCompatActivity {
 
 
+    ProgressDialog progress;
 
     RadioGroup radioGroup;
     RadioButton radioButtonMale;
@@ -39,6 +40,9 @@ public class FormActivity extends AppCompatActivity {
     private EditText passwordInput;
     private EditText addressInput;
     private EditText phoneInput;
+
+
+    private RadioButton genderInput;
 
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
     private FirebaseAuth mAuth;
@@ -89,11 +93,19 @@ public class FormActivity extends AppCompatActivity {
                 phoneInput = (EditText) findViewById(R.id.editTextFormTelephoneNumber);
 
 
+                int id=radioGroup.getCheckedRadioButtonId();
+                genderInput=(RadioButton)findViewById(id);
+
+
+
                 String getUsername = usernameInput.getText().toString().trim();
                 String getFatherName = fatherNameInput.getText().toString().trim();
                 String getEmail = emailInput.getText().toString().trim();
                 String getPassword = passwordInput.getText().toString().trim();
                 String getAddress = addressInput.getText().toString().trim();
+
+                String getGender=genderInput.getText().toString().trim();
+                Toast.makeText(FormActivity.this,getGender,Toast.LENGTH_SHORT).show();
 
                 String getphone = phoneInput.getText().toString().trim();
 
@@ -113,14 +125,10 @@ public class FormActivity extends AppCompatActivity {
                 }
 
 
-                int id=radioGroup.getCheckedRadioButtonId();
-                RadioButton radioButton=(RadioButton)findViewById(id);
-
-                String selectedValueGender=radioButton.getText().toString();
-                Toast.makeText(FormActivity.this,selectedValueGender,Toast.LENGTH_SHORT).show();
 
 
-                ProgressDialog progress;
+
+
 
                 progress = new ProgressDialog(FormActivity.this);
                 progress.setTitle("Registration Process Running!!");
@@ -154,6 +162,7 @@ public class FormActivity extends AppCompatActivity {
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
+                            progress.dismiss();
                             Toast.makeText(FormActivity.this, "Registration Failed",
                                     Toast.LENGTH_SHORT).show();
                         }
@@ -165,6 +174,7 @@ public class FormActivity extends AppCompatActivity {
                             details.setPassword(passwordInput.getText().toString().trim());
                             details.setAddress(addressInput.getText().toString().trim());
                             details.setPhoneNo(parseInt(phoneInput.getText().toString().trim()));
+                            details.setGender(genderInput.getText().toString().trim());
                             DatabaseReference myRef = database.getReference("details");
                             myRef.child(myRef.push().getKey()).setValue(details);
                             startActivity(new Intent(FormActivity.this, LoginActivity.class));
