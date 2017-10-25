@@ -28,6 +28,7 @@ import com.google.firebase.auth.FirebaseUser;
  */
 public class LoginActivity extends AppCompatActivity {
 
+    ProgressDialog progress;
 
     private EditText mEmailView;
     private EditText mPasswordView;
@@ -180,7 +181,7 @@ public class LoginActivity extends AppCompatActivity {
 
         // progress bar
 
-        ProgressDialog progress;
+
 
         progress = new ProgressDialog(LoginActivity.this);
         progress.setTitle("Sign In !!");
@@ -202,6 +203,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                         if (!task.isSuccessful()) {
+                            progress.dismiss();
                             Log.w("TESTING", "signInWithEmail:failed", task.getException());
                             Toast.makeText(LoginActivity.this, "Signin Failed",
                                     Toast.LENGTH_SHORT).show();
